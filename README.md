@@ -78,3 +78,4 @@ Duração: 60 Horas. Conclusão: 27/11/1999
 Idiomas:
 Portugués: Nativo / Español: Bilingüe / Francés: Conversação / Ingles: Técnico
 Outros dados: CNH A/B
+cv
