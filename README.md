@@ -4,6 +4,7 @@ Fone: (047)98455-6932
 Schroeder – SC
 
 EXPERIENCIA PROFISSIONAL:
+
 DELICIAS DA ROÇA
 - Comerciante de produtos coloniais.
 RESTAURANTE PEQUENO PRINCIPE
