@@ -2,6 +2,7 @@ SANDRO LOCH
 Idade: 36 C
 Fone: (047)98455-6932
 Schroeder – SC
+
 EXPERIENCIA PROFISSIONAL:
 DELICIAS DA ROÇA
 - Comerciante de produtos coloniais.
@@ -45,7 +46,9 @@ INDUSTRIA Y COMERCIOS BREITHAUPT S/A
 estoque, metas e controle de faturamento.
 Controle de devoluções, - Migração do sistema de gerenciamento de vendas,
 suporte informático.
+
 Formação Academica: Ensino Médio Completo
+
 Formação Complementaria:
 SENAR
 Curso: Produção Caseira de Pães e Biscoitos
