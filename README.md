@@ -51,35 +51,44 @@ suporte informático.
 Formação Academica: Ensino Médio Completo
 
 Formação Complementaria:
+
 SENAR
 Curso: Produção Caseira de Pães e Biscoitos
 Duração: 24 Horas Conclusão: 30/08/2017
 SENAR
 Certificado: Boas Práticas de Manipulação de Alimentos
 Duração: 16 Horas Conclusão: 11/07/2017
+
 OPENS TECNOLOGIA
 Curso: Instalação e configuração SNEP (Asterisk, Troncos SIP/IAX, Khomp,
 TDM/Virtual, Telefonia IP, Softphones)
 Duração: 8 Horas. Conclusão: 23/07/2011
+
 ESCUELAS CEV COMUNICACION-IMAGEN-SONIDO
 Certificado: Operador Técnico de Som
 Duração: Período del 21/10/07 a 14/03/2008
+
 SENAC/CISCO
 Curso: CCNA Network; Configuração e implantação de redes e router;
 Switches, e Aperfeiçoamento de protocolos TCP/IP
 Duração: 120 Horas Conclusão: 26/05/2006
+
 TREITEC – Soluções inteligentes em treinamentos
 Certificados: Windows 2000/03Server / Conceitos básicos em redes
 Duración: 12 Horas. Conclusão: 09/10/2004
 Certificados: Windows 2000/03 Server / Infraestrutura e Active Directory
 Duração: 32 Horas. Conclusão: 23/10/2004
+
 EXTENSION EMPRESARIAL LTDA – Asesoría en RRHH
 Curso: Formação de vendedores
 Duração: 8 horas. Conclusão: 22/10/2001
+
 ESCOLAS SID INFORMÁTICA
 Curso: Habilitação em Pacote office
 Duração: 60 Horas. Conclusão: 27/11/1999
+
 Idiomas:
+
 Portugués: Nativo / Español: Bilingüe / Francés: Conversação / Ingles: Técnico
 Outros dados: CNH A/B
 cv
