@@ -1,0 +1,141 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.88]{geometry}
+\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Sandro}{Loch}
+\title{Full Stack TI}                               % optional, remove / comment the line if not wanted
+
+\phone[mobile]{+55 ~(47)~98455~6932}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{es.loch@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/esloch/}                         % optional, remove / ttps:comment the line if not wanted
+\extrainfo{Santa Catarina, Brasil}            % optional, remove / comment the line if not wanted
+
+%\address{Rua Santa Catarina, 141}{89275-000}{Schroeder}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\photo[34pt][0.4pt]{my_key.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Resumen}
+\cventry{}{Analista e Desenvolvedor de sistemas com experiencia em projetos OpenSource}{}{}{}{}{}
+
+\section{Experiencia Laboral}
+
+
+\cventry{2005--2005}{Comerciante de produtos coloniais.}{DELICIAS DA ROÇA}{}{}{}{}{}\\
+
+\cventry{2005--2005}{Garçom de Sala }{RESTAURANTE PEQUENO PRINCIPE}{}{}{}{}{}\\
+
+\cventry{2005--2005}{Garçom – Preparação e atendente de Confeitaria, 
+Caixa. }{CAFETERIA GERONA 13}{}{}{}{}{}\\
+
+\cventry{2005--2005}{Administrativo - Contas a receber - Vendas - Atendimento telefonico}{ ALMA PET SHOP}{}{}{}{}{}\\
+
+\cventry{2005--2005}{Recepção, Check In / Check Out – Agente de Reservas -
+Compras – Controle de centro de custos – Auditoría -
+Elaboração de planilhas para gestão financeira. }{IMBASSAI HOSTEL LUJIMBA}{}{}{}{}{}\\
+
+\cventry{2006--2007}{Recepção, Check In / Check Out – Agente de Reservas }{KAYROS BUSINESS HOTEL}{}{}{}{}{}\\
+
+\cventry{2006--2007}{Prospecção e captação de clientes.
+Consultoria e vendas de soluções (Software, Hardware e Serviços) em TI.
+Elaboração de projetos e propostas comerciais.}{OPENS TECNOLOGIA}{}{}{}{}{}\\
+
+\cventry{2005--2005}{Barman. Preparação e elaboração de cocktails.
+Abertura e fechamento de caixas. Balance e pedidos de mercadorias.}{ PUB / TABERNA LA BOCA DEL LOBO}{}{}{}{}{}\\
+
+\cventry{2005--2005}{Instalação de Access Point, antenas wireless, modems ADSL, router, switch.
+Instalação, configuração e manutenção de servidores}{TFI NETWORKS INFORMATICA LTDA}{}{}{}{}{}\\
+
+\cventry{2002--2004}{Suporte em T.I, Montagem, instalação e manutenção de computadores e software. Gerenciamento de redes, servidores, infraestrutura e Active Directory - Faturamento, análises e elaboração de planilhas e relatórios estatísticos gerenciais, metas e controle de faturamento. Fechamento de comissões e pagamentos para representantes.}{ADLIN PLASTICOS LTDA}{}{}{}{}{}\\
+
+\cventry{2002--2002}{Suporte on-line e prestação de serviços ao cliente.}{TECNOFLEX SERVICIOS LTDA}{}{}{}{}{}\\
+
+\cventry{2003--2004}{Vendas, Caixa, análises e elaboração de planilhas e relatórios de controle de estoque, metas e controle de faturamento. Controle de devoluções - Suporte informático.}{INDUSTRIA Y COMERCIOS BREITHAUPT S/A}{}{}{}{}{}\\
+
+\section{Formação Academica}
+\cventry{2003}{Ensino Médio}{EEHB}{Jaraguá do Sul/Brasil}{}{}  % arguments 3 to 6 can be left empty
+
+
+
+
+\section{Cursos complementarios}
+
+\cvlistitem{\textbf{Instalação e configuração SNEP (Asterisk, Troncos SIP/IAX, Khomp,
+TDM/Virtual, Telefonia IP, Softphones) }OPENS TECNOLOGIA (2011)}
+\cvlistitem{\textbf{Operador Técnico de Som }ESCUELAS CEV COMUNICACION-IMAGEN-SONIDO (2008)}
+\cvlistitem{\textbf{CCNA Network; Configuração e implantação de redes e router;
+Switches, e Aperfeiçoamento de protocolos TCP/IP } SENAC/CISCO (2006)}
+\cvlistitem{\textbf{Windows 2000/03Server / Conceitos básicos em redes} TREITEC (2004)}
+\cvlistitem{\textbf{Windows 2000/03 Server / Infraestrutura e Active Directory  }TREITEC (2004)}
+\cvlistitem{\textbf{Formação de vendedores }EXTENSION EMPRESARIAL LTDA (2001)}
+\cvlistitem{\textbf{Habilitação em Pacote office }ESCOLAS SID INFORMÁTICA (1999)}
+
+\section{Languages}
+\cvitemwithcomment{Portugués}{Nativo}{}
+\cvitemwithcomment{Español}{Fluído}{}
+\cvitemwithcomment{Inglés}{Básico}{}
+\cvitemwithcomment{Francês}{Básico}{}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
