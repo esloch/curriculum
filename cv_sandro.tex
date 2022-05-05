@@ -1,134 +1,277 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/11/21)
 %
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Stijn Dejongh
+% Based on a template by Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
-% moderncv themes
-\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
-\usepackage[scale=0.88]{geometry}
-\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
-\setlength{\makecvtitlenamewidth}{21cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
-% personal data
-\name{Sandro}{Loch}
-\title{FullStack TI}                               % optional, remove / comment the line if not wanted
-
-\phone[mobile]{+55 ~(47)~98455~6932}                   % optional, remove / comment the line if not wanted
-%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{es.loch@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{github.com/esloch/}                         % optional, remove / ttps:comment the line if not wanted
-\extrainfo{Santa Catarina, Brasil}            % optional, remove / comment the line if not wanted
-
-%\address{Rua Santa Catarina, 141}{89275-000}{Schroeder}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-%\photo[34pt][0.4pt]{my_key.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
-
-
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
+\documentclass[9pt, green]{./template/developercv} % Default font size, values from 8-12pt are recommended
+\PassOptionsToPackage{dvipsnames}{xcolor}
+%----------------------------------------------------------------------------------------
 \begin{document}
-	%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-	%-----       resume       ---------------------------------------------------------
-	\makecvtitle
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\hspace{18pt}
+
+\begin{minipage}[t]{0.63\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\vspace{-.38cm}
+	\colorbox{accent}{{\Huge\textcolor{white}{\textbf{\MakeUppercase{Sandro}}}}} % First name
+	\hspace{-2pt}
+	\hspace{-2pt}
+	\colorbox{accent}{{\Huge\textcolor{white}{\textbf{\MakeUppercase{Loch}}}}} % Last name
+    \vspace{0.35cm}
+
+	{\LARGE FullStack IT \space\space \fcpipe \space\space Software Engineer}\\ % Career or current job title
+
+	\vspace{-1.1em}
+
+\end{minipage}
+\hspace{-5pt}
+\begin{minipage}[t]{0.22\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\vspace{0pt}
+	\color{darkCalmBlue}
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\ssmall
+	\linkedin{\href{https://linkedin.com/in/sandro-loch-988a7611b}{/sandro-loch}}\\
+
+	\vspace{-4pt}
+	\github{\href{https://github.com/esloch}{/esloch}}\\
+
+	\vspace{-4pt}	
+	\email{\href{mailto:es.loch@gmail.com}{es.loch@gmail.com}}\\ 
+
+	\vspace{-4pt}
+	\callme{+55 47 98455 69 32}
+
+	\vspace{-5pt}
+\end{minipage}
+\hfill % Whitespace between
+%\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+%	\vspace{-\baselineskip} % Required for vertically aligning minipages
+%	\begin{barchart}{5.5}
+%		\baritem{JavaScript}{60}
+%		\baritem{PHP}{100}
+%		\baritem{SASS/LESS}{70}
+%		\baritem{Bootstrap}{70}
+%		\baritem{Git}{40}
+%		\baritem{LaTeX}{60}
+%	\end{barchart}
+%\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	PERSONALITY SECTIONS
+%----------------------------------------------------------------------------------------
+\vspace{8pt}
+\cvsect{Summary}
+
+\vspace{2.1mm}
+{\small 
+\hspace{10pt} Open-source software developer with experience in Python, Django Framework, NGINX, Docker, PostgresSQL and Linux Server. \\
+}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\vspace{-6pt}
+\cvsect{Experience}
+\vspace{2.1mm}
+\begin{entrylist}
+	\entry
+	{07/2019 -- present }
+	{FIOTEC - Foundation for Scientific and Technological Development in Health}
+	{}
+	{
+		\vspace{0.3mm}
+		\begin{minipage}[t]{0.75\textwidth}
+			\vspace{-\baselineskip}
+			\itemmarker Responsible for developing and maintain up and running a django application about Dengue Cases Notification.\\ 
+			\itemmarker Working on the implementation and integration of new technologies to improve the development pipeline using technologies such as Ansible, Docker, Celery, PostgresSQL/PostGIS, Django application Dashboard, NGINX and CI with GH-ACTIONS. \\
+			\itemmarker Data manipulation with Ibis and Pandas, and data visualization with Plotly.
+
+ 			\vspace{-9mm}
+		\end{minipage}
+	}
+	{Research Software Engineer}
+	\entry
+	{06/2011 - 11/2011}
+	{OPENS TECNOLOGIA}
+	{}
+	{
+		\vspace{0.3mm}
+		\begin{minipage}[t]{0.75\textwidth}
+			\vspace{-\baselineskip}
+			\itemmarker Worked at a business team group, providing pre and post commercial advisory, studying and understanding commercial needs reputation and customer satisfaction. \\
+			\itemmarker Acting in software, products and services sales for virtual phone systems and network equipment. \\
+			\itemmarker Prospecting new customers, IT Consultancy and technical sales solutions (Hardware, Software and Services). \\
+ 			\vspace{-9mm}
+		\end{minipage}
+	}
+	{Commercial advisor}
+	\entry
+		{06/2005 -- 10/2006}
+		{TFI NETWORKS INFORMATICA}
+		{}
+		{
+			\vspace{0.3mm}
+			\begin{minipage}[t]{0.75\textwidth}
+				\vspace{-\baselineskip}
+				\itemmarker Management and customer support on Linux mail servers, dns server and squid proxy. \\
+				\itemmarker Responsible for installing and configuring Access Point, wireless antennas, router, switch and network equipment.\\
+ 			\vspace{-9mm}
+			\end{minipage}
+	   }
+		{Technician \band Support service}
+	\entry
+	{01/2003 -- 05/2005 }
+	{ADLIN PLASTICOS}
+	{}
+	{
+		\vspace{0.4mm}
+		\begin{minipage}[t]{0.75\textwidth} % 27.5% of the page width for the first row of icons
+			\vspace{-\baselineskip} \small
+			\vspace{-2mm}
+				\itemmarker IT support service in the company, managing the infrastructure of computer networks. Windows Server Administrator DHCP/DNS and Group Policies and Security Network. \\
+				\itemmarker Responsible for the maintenance of computers and network equipment. \\
+ 			\vspace{12pt}
+
+		\end{minipage}
+	}
+	{Support Analyst}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\vspace{-8mm}
+\begin{minipage}[t]{0.28\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Languages}
 	
-	\section{Resumo}
-	\cventry{}{Desenvolvedor de sistemas de projetos OpenSource - Conhecimentos em workflows, GitHub, Infraestrutura, Framework Web Django, Docker, Postgres, Python e Linux}{}{}{}{}{}
+	\vspace{1.2mm}
+	\small \textbf{Portuguese} \hfill {\ssmall Native \hspace{3pt}} \\
+
+	\vspace{-0.5mm}
+	\small \textbf{Spanish} \hfill \hspace{-5pt}{\ssmall Fluid \hspace{3pt}} \\
+
+	\vspace{-0.5mm}
+	\small \textbf{English} \hfill \hspace{-5pt}{\ssmall Basic \hspace{3pt}} \\
 	
-	\section{Experiencia Laboral}
+	\vspace{-0.5mm}
+	\small \textbf{French} \hfill \hspace{-5pt}{\ssmall Basic \hspace{3pt}} \\
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Proud of}
 	
-	\cventry{2019 - Atual}{Desenvolvedor Python - TI - Plataforma de AlertaDengue de Arboviroses }{FIOTEC}{}{}{}{}{}
+	\vspace{1.2mm}
+	\textcolor{accentbackground}{\faGlobe}\hspace{0.5mm}  \small{\textbf{Contributions}} \\
 	
-	\cventry{2011}{Prospecção e captação de clientes - Consultoria e vendas de soluções (Software, Hardware e Serviços) em TI - Elaboração de projetos e propostas comerciais}{OPENS TECNOLOGIA}{}{}{}{}{}
-	
-	\cventry{2005 – 2006}{Instalação de Access Point, antenas wireless, modems ADSL, router, switch - Instalação, configuração e manutenção de servidores}{TFI NETWORKS INFORMATICA LTDA}{}{}{}{}{}
-	
-	\cventry{2003 – 2005}{Suporte em T.I, Montagem, instalação e manutenção de computadores e software - Gerenciamento de redes, servidores, infraestrutura e Active Directory - Faturamento, análises e elaboração de planilhas e relatórios estatísticos gerenciais, metas e controle de faturamento - Fechamento de comissões e pagamentos para representantes}{ADLIN PLASTICOS LTDA}{}{}{}{}{}
-	
-	\cventry{2003}{Suporte on-line e prestação de serviços ao cliente}{TECNOFLEX SERVICIOS LTDA}{}{}{}{}{}
-	
-	\cventry{2001--2003}{Vendas, Caixa, análises e elaboração de planilhas e relatórios de controle de estoque, metas, faturamento e devoluções - Suporte informático}{INDUSTRIA Y COMERCIOS BREITHAUPT S/A}{}{}{}{}{}
-	
-	\section{Formação Acadêmica}
-	\cventry{2001}{Ensino Médio}{EEHB}{Jaraguá do Sul/Brasil}{}{}{}{}  % arguments 3 to 6 can be left empty
-	
-	
-	\section{Cursos complementares}
-	
-	\cvlistitem{\textbf{Fundamentos de Estatística} LabTime (CAPES) (Nov 11, 2020)}
-	
-	\cvlistitem{\textbf{Introduction to Data Visualization with Matplotlib} DataCamp (Sep 16, 2020)}
-	
-	\cvlistitem{\textbf{Visualizing Geospatial Data in Python} DataCamp (Sep 08, 2020)}
-	
-	\cvlistitem{\textbf{Unit Testing for Data Science in Python} DataCamp (Jun 10,2020)}
-	
-	\cvlistitem{\textbf{Intermediate Importing Data in Python} DataCamp (My 28, 2020)}
-	
-	\cvlistitem{\textbf{Introduction to SQL} DataCamp (May 22, 2020)}
-	
-	\cvlistitem{\textbf{Introduction to Importing Data in Python} DataCamp (May 13, 2020}
-	
-	\cvlistitem{\textbf{Bash Scripting} DataCamp (May 20, 2020)}
-	
-	\cvlistitem{\textbf{Conda Essentials} DataCamp (May 04, 2020)}
-	
-	\cvlistitem{\textbf{Git} DataCamp (May 01, 2020)}
-	
-	\cvlistitem{\textbf{Manipulating DataFrames with Pandas} DataCamp (Jan 14, 2020)}
-	
-	\cvlistitem{\textbf{Introduction to Python} DataCamp (Jan 06,2020)}
-	
-	\cvlistitem{\textbf{Instalação e configuração SNEP (Asterisk, Troncos SIP/IAX, Khomp, TDM/Virtual, Telefonia IP, Softphones) }OPENS TECNOLOGIA (2011)}
-	
-	\cvlistitem{\textbf{CCNA Network; Configuração e implantação de redes e router, Switches, e Aperfeiçoamento de protocolos TCP/IP } SENAC/CISCO (2006)}
-	
-	\cvlistitem{\textbf{Windows 2000/03Server / Conceitos básicos em redes} TREITEC (2004)}
-	
-	\cvlistitem{\textbf{Windows 2000/03 Server / Infraestrutura e Active Directory  }TREITEC (2004)}
-	
-	\cvlistitem{\textbf{Delphi 6 Basic} ProWay Informática (Mar 08, 2003)}
-	
-	\cvlistitem{\textbf{Pacote office }ESCOLAS SID INFORMÁTICA (1999)}
-	
-	\section{Informações complementares}
-	
-	\cvlistitem{\textbf{Vivência na Espanha trabalhando na área de hotelaria e turismo} (2006-2011/2014-2016)}
-	
-	%\section{Extra 2}
-	%\cvlistdoubleitem{Item 1}{Item 4}
-	%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-	%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-	
-	\section{Idiomas}
-	
-	\begin{cvcolumns}
-		\cvcolumn{Português}{\begin{itemize}\item Nativo\end{itemize}}
-		\cvcolumn{Español}{\begin{itemize}\item Bilíngue\end{itemize}}
-		\cvcolumn{Inglês}{\begin{itemize}\item Técnico\end{itemize}}
-		\cvcolumn{Francês}{\begin{itemize}\item Básico\end{itemize}}
-		
-	\end{cvcolumns}
-	
-	
-	
-	
+	\vspace{-0.5mm}
+	{\textbf{\linkage{https://opensciencelabs.org/}{ OpenScienceLabs }}}
+	\vspace{-0.5mm}
+
+\begin{itemize}[leftmargin=5.5mm]
+    \item DevOps tasks
+    \item Infrastructure, including AWS EC2 and ROUTE53 management
+    \item Community Management
+    \item Mentoring
+    \end{itemize}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\cvsect{Education \amp Trainings}
+
+	\vspace{1.2mm}
+	\begin{minipage}[t]{\linewidth}
+		\vspace{-\baselineskip}
+	\vspace{1.2mm}
+		\small \textbf{High school} \hfill \techit{\fontsize{4}{5}\selectfont 2021} 
+		\vspace{-1mm} \\
+
+		\footnotesize EEHB \textcolor{accentbackground}{\linkage{https://en.wikipedia.org/wiki/Jaraguá_do_Sul}{Jaraguá do Sul-SC/BRASIL}}
+	\end{minipage}\hfill
+	\vspace{1.2em}
+
+	\hfill
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\clearpage
+%----------------------------------------------------------------------------------------
+%	SKILL SECTIONS
+%----------------------------------------------------------------------------------------
+
+\cvsect{CERTIFICATES}
+
+\vspace{2.1mm}
+
+\begin{itemize}
+    \item{\textbf{SGDB PostgreSQL;} IFRS: Instituto Federal do Rio Grande do Sul (abr 02, 2022)}
+    
+    \item{\textbf{Statistical foundations;} LabTime (CAPES) (Nov 11, 2020)}
+    
+    \item{\textbf{Introduction to Data Visualization with Matplotlib;} {DataCamp} (Sep 16, 2020)}
+    
+    \item{\textbf{Visualizing Geospatial Data in Python;} {DataCamp} (Sep 08, 2020)}
+    
+    \item{\textbf{Unit Testing for Data Science in Python;} {DataCamp} (Jun 10,2020)}
+    
+    \item{\textbf{Intermediate Importing Data in Python;} {DataCamp} (My 28, 2020)}
+    
+    \item{\textbf{Introduction to SQL;} {DataCamp} (May 22, 2020)}
+    
+    \item{\textbf{Introduction to Importing Data in Python;} {DataCamp} (May 13, 2020)}
+    
+    \item{\textbf{Bash Scripting;} {DataCamp} (May 20, 2020)}
+    
+    \item{\textbf{Conda Essentials;} {DataCamp} (May 04, 2020)}
+    
+    \item{\textbf{Git;} {DataCamp} (May 01, 2020)}
+    
+    \item{\textbf{Manipulating DataFrames with Pandas;} {DataCamp} (Jan 14, 2020)}
+    
+    \item{\textbf{CCNA; Network fundamentals, Network access, IP connectivity, IP services, Security fundamentals, Network Protocols, Automation and programmability;} {SENAC/CISCO} (2006)}
+    
+    \item{\textbf{Windows 20003Server / Concepts and Infrastructure Network / Infraestruture and Active Directory;} {TREITEC} {(2004)}}
+    	
+    \item{\textbf{Delphi 6 Basic;} {ProWay Informática} {(Mar 08, 2003)}}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	PERSONALITY SECTIONS
+%----------------------------------------------------------------------------------------
+
 \end{document}
-
-
-%% end of file `template.tex'.
